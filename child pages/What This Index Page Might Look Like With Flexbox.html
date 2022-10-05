@@ -1,106 +1,88 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Used by the Keyboard -->
-        <meta charset="utf-8">
+<html lang="en">
+<head>
+    <!-- Used by the Keyboard -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Mark Mercer">
+    <meta name="description" content="Learning HTML by building a simple website">
+    <meta name="keywords" content="boilerplate, starter code, HTML, learning, flexbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
 
-        <title>Flexbox</title>
+    <!-- meta http-equiv="default-style" content=""--> <!-- content matches css link exactly-->
 
-        <!-- Used by Browser or Google Search -->
-        <meta name="author" content="Mark Mercer">
-        <meta name="description" content="Learning HTML by building a simple website">
-        <meta name="keywords" content="boilerplate, starter code, HTML, learning, Flexbox">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
+    <!-- Other meta attributes to be aware of -->
 
-        <!-- meta http-equiv="default-style" content=""--> <!-- content matches css link exactly-->
+    <!-- meta http-equiv="refresh" content="30"-->
+    <!-- Content forces a Internet Request to refresh webpage every "time value in seconds" -->
+    <!-- Use this when refreshes are needed -->
 
-        <!-- Other meta attributes to be aware of -->
+    <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
+    <!-- Already specified in the charset above-->
 
-        <!-- meta http-equiv="refresh" content="30"-->
-        <!-- Content forces a Internet Request to refresh webpage every "time value in seconds" -->
-        <!-- Use this when refreshes are needed -->
+    <title>Flexbox</title>
 
-        <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
-        <!-- Already specified in the charset above-->
+    <style>
+        div {border: thin line black;}
+        * {box-sizing: border-box;}
+        .header {
+            //border: 1px solid green ;
+            padding: 15 px;
+        }
+        .menu {
+            width: 25%;
+            float: left;
+            padding: 15px;
+            border: 1px solid green ;
+        }
+        .main {
+            float: left;
+            width:50%;
+            padding: 15px;
+            border: 1px solid green ;
+        }
+        .aside {
+            float: left;
+            width: 25%;
+            padding: 15 px;
+            border: 1px solid green ;
+        }
+        .footer {
+            padding: 15px;
+            border: 1px solid green (0, 255, 0);
+        }
+    </style>
 
-        <style>
-            * {
-                box-sizing: border-box;
-                font-size:2vw;
-            }
+    <!-- Warning about JavaScript, Cybersecurity Topic -->
+    <noscript>Running JavaScript is not necessary in the HTML Page ... FYI: your feature to execute scripts is turned off</noscript>
+    
+</head>
 
-            //div {border: thin dotted red (44, 189, 0);}
+<body>
 
-           
-            .header {border: 1px solid green;padding: 15px;}
-            
-            
-           
-            .menu { width: 25%;
-                float: left;
-                padding: 30px;
-                border: 1px solid blue;}
-           
-             
-                .main { width: 25%;
-                float: left;
-                padding: 15px;
-                border: 1px solid blue;}
-            
-             
-                .aside { width: 50%;
-                float: left;
-                padding: 15px;
-                border: 1px solid blue;}
-           
-             
-                .footer { width: 50%;
-                float: left;
-                padding: 15px;
-                border: 1px solid blue;}
-      
-      
-      </style>
+    <div class="header"><header>Flexbox</header></div>
+    <div class="menu"><nav>Navigation</nav></div>
+    <div class="main">
+        <section><article>This is a secton and article.</article></section>
+        <section><article><p>This is a paragraph tag inside a section-article</p></article></section>a third paragraph
+    </div>
+    <div class="aside">
+        <aside><br><br><br><br><br><br>
+            This is the aside space.
+        </aside>
+    </div>
+</body>
 
-        <!-- Cyber Security Note about JavaScript in Browsers-->
-        <noscript>Running JavaScript is not necessary in this HTML page ... FYI: your Feature to execute scripts is turned off</noscript>
+<footer>
+    <div class="footer">
+    <blockquote cite="https://www.brainyquote.com/quotes/mitch_kapor_163583">
+        <!-- Date Accessed 20220706 -->
+    </blockquote>
+    <strong>"Getting information off the Internet is like taking a drink from a firehose." - </strong>
+    <em><a href="https://www.brainyquote.com/quotes/mitch_kapor_163583" target="_blank">Mitch Kapour</a></em>
+    <p>&copy hamza abu saris, powered by habusaris in GitHub</p>
+    </div>
+</footer>
 
-    </head>
-
-    <body>
-        <div><header class="header"><h1>Flexbox Lesson</h1></header></div>
-        <div>
-            <aside class="main"><a>This is the aside space.</a>
-            
-            </aside></div>
-        <div><nav class="menu">
-
-        </div><h1>Navigation</h1>
-    </nav>
-</div>
-      
-        
-        <div><main class="aside"><h1>Main Space</h1></main></div>
-        <div><section class="footer">Section</section></div>
-        <div><article><Article</article></div>
-        <div><footer></footer></div>
-    </body>
-
-    <footer>
-        <Blockquote cite="https://www.brainyquote.com/quotes/mitch_kapor_163583">
-            <!-- Date Accessed 20220919 -->
-        </Blockquote>
-        <p>
-            <strong>
-                "Getting information off the Internet is like taking a drink from a firehose."
-            </strong>
-            <em>
-                <a href="https://www.brainyquote.com/quotes/mitch_kapor_163583" target="_blank">
-                    - Mitch Kapor
-                </a>
-            </em>
-        </p>
-        <p>&copy Mark Mercer, powered by MercersKitchen in GitHub</p>
-    </footer>
 </html>
